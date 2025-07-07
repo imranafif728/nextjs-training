@@ -9,10 +9,10 @@ const ButtonLogin = (props) => {
     // destructuring
     const {isLoggedIn, name} = props;
     if(isLoggedIn) {
-        return <Link href="/dashboard">Welcome, {name}</Link>
+        return <Link href="/dashboard" className="btn btn-primary">Welcome, {name}</Link>
     }
     
-    return <button>Login</button>
+    return <button className="btn btn-primary">Login</button>
 };
 
 export default ButtonLogin;
